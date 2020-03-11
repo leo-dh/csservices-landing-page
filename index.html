@@ -1,0 +1,190 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>CS Services</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<header>
+			<a href="#" id="logo">CSSERVICES</a>
+			<input id="toggle-nav" type="checkbox" />
+			<nav>
+				<ul class="nav-links">
+					<li class="active">
+                        <a href="#">Home</a>
+                        <div class="underline"></div>
+                    </li>
+                    <li>
+                        <a href="#">Get Started</a>
+                        <div class="underline"></div>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                        <div class="underline"></div>
+                    </li>
+                    <li>
+                        <a href="#">About Us</a>
+                        <div class="underline"></div>
+                    </li>
+					<li id="menucontact">
+                        <a href="#">Contact Us</a>
+                        <div class="underline"></div>
+					</li>
+				</ul>
+			</nav>
+			<a href="#" id="buttoncontact"><button>Contact Us</button></a>
+
+			<label class="show-nav-btn" for="toggle-nav">
+				<div class="burger">
+					<div class="line1"></div>
+					<div class="line2"></div>
+					<div class="line3"></div>
+				</div>
+			</label>
+			<label for="toggle-nav" class="hide-nav-btn">
+				<div>
+					&times;
+				</div>
+			</label>
+		</header>
+		<section id="banner">
+			<div class="container">
+				<h1>
+					Register and Incorporate
+					<span class="emphasis">your company </span>with us today!
+				</h1>
+				<p>
+					Our experienced consultants will guide you along the
+					incorportion procedure, ensuring a hassle-free experience
+					for you.
+				</p>
+				<a href="#contactanchor"
+					><button class="primarybtn">Get a Quotation Now</button></a
+				>
+				<a href="#"><button class="tertiarybtn">Learn More</button></a>
+			</div>
+        </section>
+		<section id="testimonials">
+			<div class="container">
+				<h1>Testimonials</h1>
+				<div class="cards">
+					<div class="card" id="card1">
+						<div class="logo">
+							<img
+								src="images/5d14fcfc-885b-49a4-8004-ac834ebbc284_200x200.png"
+								alt=""
+							/>
+						</div>
+						<div class="content">
+							<h3>
+								Nova Solutions
+							</h3>
+							<p>
+								"Your after sales support team is fast and efficient. We didn't expect
+								our request to be fulfilled to within the same
+								day."
+							</p>
+						</div>
+					</div>
+					<div class="card" id="card2">
+						<div class="logo">
+							<img
+								src="images/528ae565-3171-4b82-b580-551c3b0ff300_200x200.png"
+								alt=""
+							/>
+						</div>
+						<div class="content">
+							<h3>
+								Jan's Dental
+							</h3>
+							<p>
+								"You guys really made the proces simple!. I can't believe we finished the process within a day."
+							</p>
+						</div>
+					</div>
+					<div class="card" id="card3">
+						<div class="logo">
+							<img
+								src="images/75774eb7-7ff8-4b7e-af3b-41dac161ae58_200x200.png"
+								alt=""
+							/>
+						</div>
+						<div class="content">
+							<h3>
+								Xcellence Center
+							</h3>
+							<p>
+								"We consulted multiple different firms prior to
+								this and you are the most sincere
+								of all. "
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="contactform">
+            <a href="" id="contactanchor"></a>
+			<div class="container">
+				<div class="left">
+				</div>
+				<div class="right">
+                    <div class="formheader">
+                        <h2>Send us an enquiry now!</h2>
+                        <p>
+                            Our consultants will contact you within an hour of your submission. If your submission is made outside of office hours, our consultants will contact you on the next working day.                        </p>
+                    </div>
+					<form action="">
+						<input type="text" placeholder="Name*" required/>
+						<input type="email" placeholder="Email*" required/>
+						<input type="tel" placeholder="Phone Number" />
+						<select name="servicetype" id="servicetype">
+							<option value="Company Incorporation" selected
+								>Company Incorporation</option
+							>
+							<option value="Company Secretarial Services"
+								>Company Secretarial Services</option
+							>
+							<option value="Company Accounting Services"
+								>Company Accounting Services</option
+							>
+							<option value="Others">Others</option>
+						</select>
+						<textarea
+							name=""
+							id="comments"
+							rows="4"
+							resize
+							placeholder="Insert Additional Comments.&#10You can indicate your preferred mode of contact and when you want to be contacted."
+						></textarea>
+						<button>SUBMIT</button>
+					</form>
+				</div>
+			</div>
+        </section>
+        <footer>
+            <div class="container">
+                <ul class="footerinfo">
+                    <li><h2>CSSERVICES</h2></li>
+                    <li>UEN: 2019123456A</li>
+                    <li>&mdash;</li>
+                    <li>All Rights Reserved.</li>
+                    <li>&copy; 2019-2020 CSSERVICES Pte Ltd</li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+                <ul>
+                    <li>+65 6123 4567 (TEL)</li>
+                    <li>+65 6234 5678 (FAX)</li>
+                    <li><a href="">support@csservices.com.sg</a></li>
+                </ul>
+                <ul>
+                    <li>01 Anson Road</li>
+                    <li># 01-01 International Plaza</li>
+                    <li>Singapore 123456</li>
+                </ul>
+            </div>
+        </footer>
+	</body>
+</html>
