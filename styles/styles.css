@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,400i,700&display=swap");
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Poppins", sans-serif;
+	color: #faf9f9;
+}
+html {
+	scroll-behavior: smooth;
+}
+html,
+body {
+	height: 100%;
+	margin: 0;
+}
+body {
+	display: flex;
+	flex-direction: column;
+}
+footer {
+	margin-top: auto;
+}
+
+li,
+a,
+button {
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	font-size: 1rem;
+	color: #faf9f9;
+	text-decoration: none;
+}
+
+header {
+	background-color: #142541;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 0 10%;
+	min-height: 10vh;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 99;
+}
+
+.container {
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+#logo {
+	font-family: "Poppins", sans-serif;
+	color: #faf9f9;
+	font-weight: 700;
+	font-size: 1.5rem;
+	cursor: pointer;
+	margin-right: auto;
+}
+
+.nav-links {
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+}
+.nav-links li {
+	display: inline-block;
+	padding: 0 1em;
+	position: relative;
+}
+
+.nav-links li:hover .underline {
+	background: #f37657;
+	transform: scaleX(1);
+}
+.nav-links li:hover a {
+	color: #f37657;
+	transition: all 0.4s ease 0s;
+}
+
+.nav-links li.active a {
+	color: #f37657;
+}
+.nav-links li.active:hover {
+	color: #f37657;
+}
+
+.nav-links .underline {
+	width: 100%;
+	height: 4px;
+	background: #f37657;
+	position: absolute;
+	left: 0;
+	top: calc((10vh - 1rem) / 2 + 1rem);
+	transform: scaleX(0);
+	transition: transform 0.2s ease-out;
+}
+
+.nav-links .active .underline {
+	width: 100%;
+	height: 4px;
+	background: #f37657;
+	position: absolute;
+	left: 0;
+	top: calc((10vh - 1rem) / 2 + 1rem);
+	transform: none;
+}
+
+header button {
+	padding: 0.5em 1em;
+	background-color: transparent;
+	border: 2px solid #faf9f9;
+	border-radius: 0.3em;
+	cursor: pointer;
+	transition: all 0.4s ease 0s;
+	margin-left: 1em;
+	color: #faf9f9;
+}
+
+header button:hover {
+	background-color: #faf9f9;
+	color: #142541;
+}
+
+#menucontact {
+	display: none;
+}
+
+.burger div {
+	width: 1.5em;
+	height: 0.2em;
+	background-color: #faf9f9;
+	margin: 0.3em;
+}
+
+#toggle-nav {
+	display: none;
+}
+.hide-nav-btn {
+	font-size: 1.5rem;
+	color: #faf9f9;
+}
+
+.show-nav-btn,
+.hide-nav-btn {
+	transition: all 0.3s ease 0s;
+	cursor: pointer;
+	display: none;
+}
+
+.show-nav-btn:hover,
+.hide-nav-btn:hover {
+	color: #b4a083;
+}
+footer {
+	background: #142541;
+}
+footer .container {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
+	padding: 2em 0;
+	justify-items: center;
+}
+
+footer .container .footerinfo {
+	justify-self: left;
+	padding: 0 1em;
+}
+
+footer ul {
+	list-style: none;
+}
+footer li,
+footer a {
+	font-size: 0.8rem;
+	color: #ebeaea;
+	transition: all 0.3s ease 0s;
+}
+footer a:hover {
+	text-decoration: underline;
+	color: #af4b31;
+}
+
+@media screen and (max-width: 930px) {
+	li,
+	a {
+		font-size: 1.3rem;
+	}
+	header button {
+		font-size: 1.1rem;
+		padding: 5px 12px;
+	}
+
+	nav .nav-links {
+		position: fixed;
+		width: 100%;
+		height: 90vh;
+		background: #142541;
+		top: 10vh;
+		right: -100%;
+		transition: 0.3s;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		text-align: center;
+	}
+	nav .nav-links li {
+		margin: 2rem 0;
+	}
+	.show-nav-btn {
+		display: block;
+	}
+	.hide-nav-btn {
+		display: none;
+	}
+	.hide-nav-btn div {
+		line-height: 2rem;
+		width: 30px;
+	}
+	header button {
+		margin-right: 1em;
+	}
+	#toggle-nav:checked ~ body {
+		overflow-y: hidden;
+	}
+	#toggle-nav:checked ~ nav .nav-links {
+		right: 0;
+	}
+	#toggle-nav:checked ~ .show-nav-btn {
+		display: none;
+	}
+	#toggle-nav:checked ~ .hide-nav-btn {
+		display: block;
+		text-align: center;
+		line-height: normal;
+		font-size: 2.5rem;
+	}
+	footer .container {
+		grid-template-columns: 1fr;
+		text-align: center;
+		row-gap: 1.5em;
+	}
+	footer .container .footerinfo {
+		justify-self: center;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	#menucontact {
+		display: initial;
+		font-size: 1rem;
+	}
+	#buttoncontact {
+		display: none;
+	}
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}

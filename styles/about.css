@@ -1,0 +1,223 @@
+.hero-bg {
+	min-height: 40vh;
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+		url(../images/background/perry-grone-lbLgFFlADrY-unsplash.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: 10vh;
+	display: flex;
+	align-items: center;
+	height: fit-content;
+}
+
+.hero-bg .container {
+	text-align: left;
+	font-size: 2rem;
+}
+
+.primarysection .container {
+	display: flex;
+	padding: 3em 0;
+	text-align: center;
+	justify-content: space-between;
+	min-height: 50vh;
+}
+
+.primarysection .container::after {
+	content: "";
+	background: rgba(20, 37, 65, 0.1);
+	position: absolute;
+	bottom: 0;
+	left: 10%;
+	height: 2px;
+	width: 80%;
+}
+.primarysection .container > * {
+	flex-basis: 30%;
+}
+.primarysection .container div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.primarysection .container h2 {
+	color: #af4b31;
+}
+.primarysection .container p {
+	color: #142541;
+}
+.primarysection .container h2 {
+	margin-bottom: 1em;
+}
+
+.secondarysection .container h2 {
+	color: #142541;
+}
+.secondarysection .container {
+	overflow: visible;
+	padding: 0 0 2em;
+}
+.secondarysection h2 {
+	margin: 2em 0;
+	text-align: center;
+}
+.facegrid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	column-gap: 1em;
+	row-gap: 1em;
+	margin-bottom: 2em;
+}
+
+.grid {
+	perspective: 1000px;
+	transform-style: preserve-3d;
+	cursor: pointer;
+	display: block;
+	height: calc((80vw - 3em) / 4);
+}
+
+.card {
+	height: 100%;
+	width: 100%;
+	transform-style: preserve-3d;
+	transition: all 600ms;
+	z-index: 20;
+	position: relative;
+}
+.card div {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	backface-visibility: hidden;
+	border-radius: 2px;
+}
+
+#img1 {
+	background: url(../images/faces/MjIyNTUuanBn.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+#img2 {
+	background: url(../images/faces/NTI3NzIuanBn.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+#img3 {
+	background: url(../images/faces/NTUzMzguanBn.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+#img4 {
+	background: url(../images/faces/OTUwMjkuanBn.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+#img5 {
+	background: url(../images/faces/XzA0NDY1MDEuanBn.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+#img6 {
+	background: url(../images/faces/XzAzNjk0MTUuanBn.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+#img7 {
+	background: url(../images/faces/OTk4NzAuanBn.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+#img8 {
+	background: url(../images/faces/XzAyNjQ1NjEuanBn.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+#img9 {
+	background: url(../images/faces/XzA4OTI2NjcuanBn.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+#img10 {
+	background: url(../images/faces/XzAxNDQyNzQuanBn.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+#img11 {
+	background: url(../images/faces/XzA4MzYxMDIuanBn.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.card .front {
+	background: rgba(0, 0, 0, 1);
+	opacity: 0.7;
+	transition: opacity 0.7s ease;
+}
+.card .back {
+	background: #222;
+	color: #fff;
+	transform: rotateX(180deg);
+}
+
+label:hover .card {
+	transform: rotateX(10deg);
+	box-shadow: 0 20px 20px rgba(50, 50, 50, 0.2);
+}
+label:hover .front {
+	opacity: 0;
+}
+
+input {
+	display: none;
+}
+
+:checked + .card {
+	transform: rotateX(180deg);
+}
+
+label:hover :checked + .card {
+	transform: rotateX(170deg);
+	box-shadow: 0 20px 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Media Queries */
+@media screen and (max-width: 930px) {
+	.primarysection .container {
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	.primarysection .container .vision,
+	.primarysection .container .promise {
+		margin-bottom: 2em;
+	}
+
+	label:hover :checked + .card {
+		transform: rotateX(180deg);
+	}
+
+	label:hover .card {
+		transform: none;
+		box-shadow: none;
+	}
+	label:hover .front {
+		opacity: 0.7;
+	}
+}
