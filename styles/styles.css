@@ -63,6 +63,7 @@ header {
 	list-style: none;
 	display: flex;
 	justify-content: space-around;
+	padding: 0 1em;
 }
 .nav-links li {
 	display: inline-block;
@@ -114,7 +115,6 @@ header button {
 	border-radius: 0.3em;
 	cursor: pointer;
 	transition: all 0.4s ease 0s;
-	margin-left: 1em;
 	color: #faf9f9;
 }
 
@@ -187,10 +187,10 @@ footer a:hover {
 	a {
 		font-size: 1.3rem;
 	}
-	header button {
-		font-size: 1.1rem;
+	/* header button {
+		font-size: 1rem;
 		padding: 5px 12px;
-	}
+	} */
 
 	nav .nav-links {
 		position: fixed;

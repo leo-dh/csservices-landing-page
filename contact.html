@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>CSServices - Contact Us</title>
+		<link rel="stylesheet" href="./styles/styles.css" />
+		<link rel="stylesheet" href="./styles/contact.css" />
+	</head>
+	<body>
+		<header>
+			<a href="#" id="logo">CSSERVICES</a>
+			<input id="toggle-nav" type="checkbox" />
+			<nav>
+				<ul class="nav-links">
+					<li>
+						<a href="index.html">Home</a>
+						<div class="underline"></div>
+					</li>
+					<li>
+						<a href="getstarted.html">Get Started</a>
+						<div class="underline"></div>
+					</li>
+					<li>
+						<a href="services.html">Services</a>
+						<div class="underline"></div>
+					</li>
+					<li>
+						<a href="about.html">About Us</a>
+						<div class="underline"></div>
+					</li>
+					<li id="menucontact" class="active">
+						<a href="contact.html">Contact Us</a>
+						<div class="underline"></div>
+					</li>
+				</ul>
+			</nav>
+			<a href="contact.html" id="buttoncontact" class="active"
+				><button>Contact Us</button></a
+			>
+			<label class="show-nav-btn" for="toggle-nav">
+				<div class="burger">
+					<div class="line1"></div>
+					<div class="line2"></div>
+					<div class="line3"></div>
+				</div>
+			</label>
+			<label for="toggle-nav" class="hide-nav-btn">
+				<div>
+					&times;
+				</div>
+			</label>
+		</header>
+		<section class="hero-bg">
+			<div class="container">
+				<h1>Contact Us</h1>
+				<p>
+					Drop us a message, or give us a heads up if you plan on
+					meeting us in person.
+				</p>
+			</div>
+		</section>
+		<section class="contactform">
+			<div class="container">
+				<div class="left">
+                    <div class="description">
+                        <div>
+                            <h4>Corporate Secretarial Services</h4>
+                        </div>
+                        <div>
+                            <p>+65 6123 4567</p>
+                            <a href="">support@csservices.com.sg
+                            </a>
+                        </div>
+                        <div>
+                            <p>01 Anson Road <br>
+                                # 01-01 International Plaza <br>
+                                Singapore 123456</p>
+                        </div>
+                    </div>
+                </div>
+
+				<div class="right">
+                    <div class="formheader">
+					    <h2>Leave Us A Message</h2>
+                    </div>
+					<form action="">
+						<input type="text" placeholder="Name*" required/>
+						<input type="email" placeholder="Email*" required/>
+						<input type="tel" placeholder="Phone Number" />
+						<select name="servicetype" id="servicetype" >
+							<option value="Others" selected disabled
+								>What's this about?</option
+							>
+							<option value="Company Incorporation"
+								>Company Incorporation</option
+							>
+							<option value="Company Secretarial Services"
+								>Company Secretarial Services</option
+							>
+							<option value="Company Accounting Services"
+								>Company Accounting Services</option
+							>
+							<option value="Others">Others</option>
+						</select>
+						<textarea
+							name=""
+							id="comments"
+							rows="4"
+							resize
+							placeholder="Insert Additional Message.&#10You can indicate your preferred mode of contact and when you want to be contacted."
+						></textarea>
+						<button>SUBMIT</button>
+					</form>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="container">
+				<ul class="footerinfo">
+					<li><h2>CSSERVICES</h2></li>
+					<li>UEN: 2019123456A</li>
+					<li>&mdash;</li>
+					<li>All Rights Reserved.</li>
+					<li>&copy; 2019-2020 CSSERVICES Pte Ltd</li>
+					<li><a href="#">Terms and Conditions</a></li>
+					<li><a href="#">Privacy Policy</a></li>
+				</ul>
+				<ul>
+					<li>+65 6123 4567 (TEL)</li>
+					<li>+65 6234 5678 (FAX)</li>
+					<li><a href="">support@csservices.com.sg</a></li>
+				</ul>
+				<ul>
+					<li>01 Anson Road</li>
+					<li># 01-01 International Plaza</li>
+					<li>Singapore 123456</li>
+				</ul>
+			</div>
+		</footer>
+	</body>
+</html>

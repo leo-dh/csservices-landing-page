@@ -39,7 +39,6 @@ button {
 
 #banner p {
 	width: 60%;
-	color: #faf9f9;
 	margin-bottom: 0.5em;
 	text-justify: auto;
 	color: rgb(197, 197, 197);
@@ -57,13 +56,18 @@ button {
 
 #banner .tertiarybtn {
 	border: none;
+	transition: all 0.2s ease 0s;
+}
+
+#banner .tertiarybtn:hover {
+	color: #af4b31;
 }
 
 #banner .tertiarybtn::after {
 	content: "\25BA";
 	margin: 0 0 0 1em;
 	display: inline-block;
-	transition: all 0.3s ease 0s;
+	transition: transform 0.3s ease 0s;
 }
 #banner .tertiarybtn:hover::after {
 	color: #af4b31;

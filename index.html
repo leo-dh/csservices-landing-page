@@ -30,12 +30,14 @@
                         <div class="underline"></div>
                     </li>
 					<li id="menucontact">
-                        <a href="index.html#contactanchor">Contact Us</a>
+                        <a href="contact.html">Contact Us</a>
                         <div class="underline"></div>
 					</li>
 				</ul>
 			</nav>
-			<a href="index.html#contactanchor" id="buttoncontact"><button>Contact Us</button></a>
+			<a href="contact.html" id="buttoncontact"
+				><button>Contact Us</button></a
+			>
 
 			<label class="show-nav-btn" for="toggle-nav">
 				<div class="burger">
@@ -141,8 +143,11 @@
 						<input type="text" placeholder="Name*" required/>
 						<input type="email" placeholder="Email*" required/>
 						<input type="tel" placeholder="Phone Number" />
-						<select name="servicetype" id="servicetype">
-							<option value="Company Incorporation" selected
+						<select name="servicetype" id="servicetype" >
+							<option value="Others" selected disabled
+								>What's this about?</option
+							>
+							<option value="Company Incorporation"
 								>Company Incorporation</option
 							>
 							<option value="Company Secretarial Services"
@@ -158,7 +163,7 @@
 							id="comments"
 							rows="4"
 							resize
-							placeholder="Insert Additional Comments.&#10You can indicate your preferred mode of contact and when you want to be contacted."
+							placeholder="Insert Additional Message.&#10You can indicate your preferred mode of contact and when you want to be contacted."
 						></textarea>
 						<button>SUBMIT</button>
 					</form>

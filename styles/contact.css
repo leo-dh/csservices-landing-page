@@ -1,0 +1,168 @@
+.hero-bg {
+	min-height: 40vh;
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+		url(../images/background/sean-pollock-PhYq704ffdA-unsplash.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: 10vh;
+	display: flex;
+	align-items: center;
+	height: fit-content;
+}
+
+.hero-bg .container {
+	text-align: left;
+	font-size: 2rem;
+}
+
+.hero-bg .container p {
+	font-size: 0.9rem;
+	color: rgb(197, 197, 197);
+}
+
+header .active button {
+	border: 2px solid #f37657;
+}
+
+.contactform {
+	display: flex;
+}
+
+.contactform .container {
+	min-height: 90vh;
+	height: fit-content;
+	display: flex;
+	flex-direction: row;
+}
+
+.contactform .container h2 {
+	color: #142541;
+}
+.emphasis {
+	color: #af4b31;
+}
+.contactform .container .left {
+	padding: 0 5vw 0 0;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex-basis: 40%;
+}
+.contactform .container .left .formheader {
+	text-align: center;
+}
+.contactform .container .left .description {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+.contactform .container .left .description > * {
+	margin-bottom: 2em;
+}
+
+.description h4 {
+	margin-top: 2em;
+}
+.description h4,
+.description p {
+	color: #142541;
+}
+.contactform .container a {
+	color: #142541;
+	transition: all 0.2s ease 0s;
+}
+.contactform .container a:hover {
+	text-decoration: underline;
+	color: #af4b31;
+}
+.contactform .container .left:after {
+	content: "";
+	background: rgba(20, 37, 65, 0.1);
+	position: absolute;
+	bottom: 10%;
+	right: 0;
+	height: 80%;
+	width: 2px;
+}
+.contactform .container .right {
+	padding: 0 0 0 5vw;
+	flex-basis: 60%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.contactform form {
+	display: grid;
+	row-gap: 1em;
+	margin: 1em 0;
+}
+.contactform form > * {
+	color: #142541;
+	font-size: 1em;
+	border-radius: 0.3em;
+	padding: 0.3em 0.5em;
+	border: 1px solid #142541;
+	width: 100%;
+}
+.contactform form > *:focus {
+	outline: none;
+}
+.contactform button {
+	background: #af4b31;
+	color: #ebeaea;
+	transition: all 0.3s ease 0s;
+	border: none;
+	height: 3em;
+}
+.contactform button:hover {
+	background: #434343;
+}
+
+#servicetype,
+#servicetype option {
+	color: #142541;
+}
+.contactform textarea {
+	resize: none;
+}
+.contactform .formheader {
+	margin: 1em 0;
+}
+
+@media screen and (max-width: 930px) {
+	.contactform .container a {
+		font-size: 1rem;
+	}
+
+	.contactform .container {
+		flex-direction: column;
+	}
+
+	.contactform .container .left {
+		padding: 0;
+		flex-basis: 50vh;
+	}
+
+	.contactform .container .left:after {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		height: 2px;
+		width: 100%;
+	}
+
+	.contactform .container .right .formheader {
+		text-align: center;
+	}
+
+	.contactform .container .right {
+		padding: 0;
+		flex-basis: 90vh;
+		justify-content: space-evenly;
+	}
+}
