@@ -17,12 +17,19 @@
 }
 
 .primarysection .container {
-	display: flex;
-	padding: 3em 0;
-	text-align: center;
-	justify-content: space-between;
 	min-height: 50vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	position: relative;
+}
+.primarysection .gridwrapper {
+	display: grid;
+	grid-template-rows: 3fr 7fr;
+	grid-template-columns: repeat(3, 1fr);
+	grid-auto-flow: column;
+	column-gap: 4em;
+	text-align: center;
 }
 
 .primarysection .container::after {
@@ -34,13 +41,11 @@
 	height: 2px;
 	width: 80%;
 }
-.primarysection .container > * {
-	flex-basis: 30%;
-}
-.primarysection .container div {
+.primarysection .container h2,
+.primarysection .container p {
 	display: flex;
-	flex-direction: column;
 	justify-content: center;
+	align-items: center;
 }
 
 .primarysection .container h2 {
@@ -48,9 +53,7 @@
 }
 .primarysection .container p {
 	color: #142541;
-}
-.primarysection .container h2 {
-	margin-bottom: 1em;
+	padding: 1em 0;
 }
 
 .secondarysection .container h2 {
@@ -181,7 +184,13 @@
 	color: #fff;
 	transform: rotateX(180deg);
 }
-
+.front .jobtitle {
+	text-align: right;
+	font-size: 0.7rem;
+}
+.front .name {
+	text-align: right;
+}
 label:hover .card {
 	transform: rotateX(10deg);
 	box-shadow: 0 20px 20px rgba(50, 50, 50, 0.2);
@@ -205,13 +214,19 @@ label:hover :checked + .card {
 
 /* Media Queries */
 @media screen and (max-width: 930px) {
-	.primarysection .container {
-		flex-direction: column;
-		justify-content: space-between;
+	.primarysection .gridwrapper {
+		grid-template-rows: repeat(3, 3fr 7fr);
+		grid-template-columns: 1fr;
+		text-align: center;
 	}
-	.primarysection .container .vision,
-	.primarysection .container .promise {
-		margin-bottom: 2em;
+	.primarysection .container {
+		padding: 3em 0;
+	}
+
+	.primarysection .container p {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 
 	label:hover :checked + .card {

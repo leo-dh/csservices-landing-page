@@ -1,0 +1,207 @@
+.hero-bg {
+	min-height: 40vh;
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+		url(../images/background\/loui-kiaer-CielzQJR0SQ-unsplash.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: 10vh;
+	display: flex;
+	align-items: center;
+	height: fit-content;
+}
+
+.hero-bg .container {
+	text-align: left;
+	font-size: 2rem;
+}
+.hero-bg .container p {
+	font-size: 0.9rem;
+	color: rgb(197, 197, 197);
+}
+
+.first * {
+	color: #142541;
+}
+.emphasis {
+	color: #f37657;
+}
+
+.first h2,
+.first p {
+	font-size: 2rem;
+	padding: 1em;
+}
+
+.first .container {
+	min-height: 50vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	text-align: center;
+}
+
+.second {
+	background-color: #142541;
+}
+.second .container {
+	width: 100%;
+	min-height: 50vh;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+.second .container div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 1em;
+}
+#step1 {
+	background-color: #c7816f;
+}
+#step2 {
+	background-color: #bf6f5a;
+}
+#step3 {
+	background-color: #b75d46;
+}
+#step4 {
+	background-color: #af4b31;
+}
+
+.third ul,
+.fourth ul {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 1fr 1fr;
+	column-gap: 1em;
+	row-gap: 1em;
+	padding-bottom: 1.5em;
+}
+.third ul li,
+.fourth ul li {
+	text-align: center;
+	display: flex;
+	align-items: center;
+	padding: 1em;
+}
+.third h2,
+.fourth .top h2 {
+	color: #142541;
+	text-align: center;
+	padding: 1em 0;
+}
+.third ul li p,
+.fourth ul li p {
+	color: #142541;
+	width: 80%;
+	text-align: center;
+	font-size: 1.1rem;
+}
+.third ul li img,
+.fourth ul li img {
+	width: 20%;
+	margin: 1em;
+}
+
+.fourth {
+	background-color: #faf9f9;
+}
+.fourth .container {
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 1.5em;
+}
+.fourth p,
+.fourth h2 {
+	color: #142541;
+}
+.fourth .bottom {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.fifth {
+	background-color: #af4b31;
+}
+.fifth .container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1em;
+}
+.fifth .container > * {
+	padding: 0 1em;
+}
+.fifth h2 {
+	color: #faf9f9;
+}
+.fifth button {
+	background-color: transparent;
+	border: 2px solid #faf9f9;
+	border-radius: 0.5rem;
+	padding: 0.5rem 1rem;
+	color: #faf9f9;
+	font-size: 1.5rem;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+}
+.fifth button:hover {
+	background-color: #faf9f9;
+	color: #af4b31;
+}
+
+@media screen and (max-width: 900px) {
+	.second .container {
+		grid-template-columns: auto;
+		grid-template-rows: repeat(4, 1fr);
+	}
+	.third ul,
+	.fourth ul {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: auto;
+	}
+	.third ul li,
+	.fourth ul li {
+		padding: 0em 0.5em;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.first h2,
+	.first p {
+		font-size: 1.5rem;
+	}
+	.third ul {
+		grid-template-rows: repeat(6, 1fr);
+		grid-template-columns: auto;
+	}
+	.third ul li {
+		padding: 0;
+	}
+	.fourth ul {
+		grid-template-rows: repeat(4, 1fr);
+		grid-template-columns: auto;
+	}
+	.fourth ul li {
+		padding: 0;
+	}
+
+	.fifth .container {
+		flex-direction: column;
+		padding: 1em 0;
+	}
+	.fifth .container h2 {
+		margin-bottom: 1rem;
+	}
+	.fifth .container h2 {
+		padding: 0;
+		text-align: center;
+	}
+	.fifth .container a {
+		padding: 0;
+	}
+}

@@ -11,3 +11,5 @@ The company is purely fictitious and not based on any existing companies. Any re
 -   Background Photos are taken from https://unsplash.com
 -   Logos are generated with https://www.freelogodesign.org/
 -   Faces are obtained from https://generated.photos/
+-   Icons are obtained from https://www.flaticon.com
+    -   Icons made by Freepik from www.flaticon.com
