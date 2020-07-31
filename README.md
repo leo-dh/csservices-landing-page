@@ -1,20 +1,15 @@
-# CSServices
+# CSServices Landing Page Mockup
 
-## Build Setup
+This is a landing page mockup for a company providing corporate secretarial services. This static webpage is designed to be responsive and mobile-friendly. This is done purely in HTML and CSS. Javascript is not used in this project.
 
-```bash
-# install dependencies
-$ npm install
+## Disclaimer
 
-# serve with hot reload at localhost:3000
-$ npm run dev
+The company is purely fictitious and not based on any existing companies. Any resemblance to existing companies is entirely coincidental and not intended.
 
-# build for production and launch server
-$ npm run build
-$ npm run start
+## Credits
 
-# generate static project
-$ npm run generate
-```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+- Background Photos are taken from https://unsplash.com
+- Logos are generated with https://www.freelogodesign.org/
+- Faces are obtained from https://generated.photos/
+- Icons are obtained from https://www.flaticon.com
+  - Icons made by Freepik from www.flaticon.com
