@@ -1,279 +1,285 @@
 li,
 a,
 button {
-	font-family: "Poppins", sans-serif;
-	font-weight: 400;
-	font-size: 1rem;
-	color: #faf9f9;
-	text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #faf9f9;
+  text-decoration: none;
 }
 .emphasis {
-	color: #af4b31;
+  color: #af4b31;
 }
 
 #banner {
-	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-		url(../images/background/k8-bxkpLEyGK-s-unsplash.jpg);
-	min-height: 90vh;
-	height: fit-content;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-position: center;
-	background-size: cover;
-	margin-top: 10vh;
-	padding: 2em 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../images/background/k8-bxkpLEyGK-s-unsplash.jpg);
+  min-height: 90vh;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+  margin-top: 10vh;
+  padding: 2em 0;
 }
 
 #banner .container {
-	text-align: left;
+  text-align: left;
 }
 
 #banner h1 {
-	font-size: 3rem;
-	text-align: left;
-	width: 60%;
-	margin-bottom: 0.5em;
-	line-height: 4rem;
+  font-size: 3rem;
+  text-align: left;
+  width: 60%;
+  margin-bottom: 0.5em;
+  line-height: 4rem;
 }
 
 #banner p {
-	width: 60%;
-	margin-bottom: 0.5em;
-	text-justify: auto;
-	color: rgb(197, 197, 197);
+  width: 60%;
+  margin-bottom: 0.5em;
+  text-justify: auto;
+  color: rgb(197, 197, 197);
 }
 
 #banner button {
-	margin-top: 1rem;
-	background-color: transparent;
-	padding: 10px 20px;
-	border-radius: 0.3em;
-	cursor: pointer;
-	transition: all 0.3s ease 0s;
-	min-width: 210px;
+  margin-top: 1rem;
+  background-color: transparent;
+  padding: 10px 20px;
+  border-radius: 0.3em;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  min-width: 210px;
 }
 
 #banner .tertiarybtn {
-	border: none;
-	transition: all 0.2s ease 0s;
+  border: none;
+  transition: all 0.2s ease 0s;
 }
 
 #banner .tertiarybtn:hover {
-	color: #af4b31;
+  color: #af4b31;
 }
 
 #banner .tertiarybtn::after {
-	content: "\25BA";
-	margin: 0 0 0 1em;
-	display: inline-block;
-	transition: transform 0.3s ease 0s;
+  content: "\25BA";
+  margin: 0 0 0 1em;
+  display: inline-block;
+  transition: transform 0.3s ease 0s;
 }
 #banner .tertiarybtn:hover::after {
-	color: #af4b31;
-	transform: translateX(0.5em);
+  color: #af4b31;
+  transform: translateX(0.5em);
 }
 
 #banner .primarybtn {
-	background-color: #af4b31;
-	border: none;
-	transition: all 0.4s ease 0s;
+  background-color: #af4b31;
+  border: none;
+  transition: all 0.4s ease 0s;
 }
 #banner .primarybtn:hover {
-	background: #434343;
+  background: #434343;
 }
 
 #testimonials {
-	background: #ebeaea;
-	min-height: 90vh;
-	height: fit-content;
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+  background: #ebeaea;
+  min-height: 90vh;
+  height: fit-content;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2em 0;
 }
 
+@media screen and (max-height: 700px) {
+  #testimonials {
+    min-height: unset;
+  }
+}
 #testimonials .container {
-	text-align: center;
-	margin-top: 0;
-	margin-bottom: 0;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-evenly;
-	height: 100%;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
 }
 
 #testimonials .container h1 {
-	color: #142541;
-	font-size: 2rem;
+  color: #142541;
+  font-size: 2rem;
 }
 
 .cards {
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .card {
-	flex-basis: 30%;
-	height: auto;
-	display: flex;
-	flex-direction: column;
+  flex-basis: 30%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .card p {
-	font-style: italic;
-	color: #faf9f9;
-	line-height: 2em;
-	text-align: center;
-	padding: 0 0 1em;
+  font-style: italic;
+  color: #faf9f9;
+  line-height: 2em;
+  text-align: center;
+  padding: 0 0 1em;
 }
 .card h3 {
-	padding: 1em 0;
-	color: #faf9f9;
-	font-size: 1.3rem;
-	text-transform: uppercase;
-	height: 4em;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  padding: 1em 0;
+  color: #faf9f9;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  height: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .card .logo {
-	background-color: #faf9f9;
-	flex: content;
-	border-top-left-radius: 0.5em;
-	border-top-right-radius: 0.5em;
+  background-color: #faf9f9;
+  flex: content;
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
 }
 .card .content {
-	background-color: #142541;
-	padding: 0 1.5em;
-	flex: 1;
-	border-bottom-left-radius: 0.5em;
-	border-bottom-right-radius: 0.5em;
+  background-color: #142541;
+  padding: 0 1.5em;
+  flex: 1;
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
 }
 
 #contactform {
-	min-height: 90vh;
-	height: fit-content;
-	background-color: #cedee4;
-	display: flex;
-	position: relative;
-	overflow: hidden;
+  min-height: 90vh;
+  height: fit-content;
+  background-color: #cedee4;
+  display: flex;
+  position: relative;
+  overflow: hidden;
 }
 #contactform a {
-	position: absolute;
-	top: -10vh;
-	padding: 0;
-	margin: 0;
+  position: absolute;
+  top: -10vh;
+  padding: 0;
+  margin: 0;
 }
 #contactform .container {
-	width: 100%;
-	display: grid;
-	grid-template-columns: 45fr 55fr;
-	justify-items: center;
-	align-items: center;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 45fr 55fr;
+  justify-items: center;
+  align-items: center;
 }
 #contactform .container .right {
-	padding: 0 10vw;
+  padding: 0 10vw;
 }
 #contactform .container .left {
-	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-		url(../images/background/dylan-gillis-KdeqA3aTnBY-unsplash.jpg);
-	height: 100%;
-	min-height: 90vh;
-	min-width: 45vw;
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/background/dylan-gillis-KdeqA3aTnBY-unsplash.jpg);
+  height: 100%;
+  min-height: 90vh;
+  min-width: 45vw;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 #contactform form {
-	display: grid;
-	row-gap: 1em;
-	margin: 1em 0;
+  display: grid;
+  row-gap: 1em;
+  margin: 1em 0;
 }
 #contactform form > * {
-	color: #142541;
-	font-size: 1em;
-	border-radius: 0.3em;
-	padding: 0.3em 0.5em;
-	border: 1px solid #142541;
-	width: 100%;
+  color: #142541;
+  font-size: 1em;
+  border-radius: 0.3em;
+  padding: 0.3em 0.5em;
+  border: 1px solid #142541;
+  width: 100%;
 }
 #contactform form > *:focus {
-	outline: none;
+  outline: none;
 }
 #contactform button {
-	background: #142541;
-	color: #ebeaea;
-	transition: all 0.3s ease 0s;
-	border: none;
-	height: 3em;
+  background: #142541;
+  color: #ebeaea;
+  transition: all 0.3s ease 0s;
+  border: none;
+  height: 3em;
 }
 #contactform button:hover {
-	background: #af4b31;
+  background: #af4b31;
 }
 
 #contactform h2,
 #contactform p {
-	margin-bottom: 1em;
-	color: #142541;
+  margin-bottom: 1em;
+  color: #142541;
 }
 #servicetype,
 #servicetype option {
-	color: #142541;
+  color: #142541;
 }
 #contactform textarea {
-	resize: none;
+  resize: none;
 }
 #contactform .formheader {
-	margin: 1em 0;
+  margin: 1em 0;
 }
 
 @media screen and (max-width: 930px) {
-	#banner h1 {
-		font-size: 2rem;
-		width: 100%;
-	}
+  #banner h1 {
+    font-size: 2rem;
+    width: 100%;
+  }
 
-	#banner p {
-		display: none;
-	}
+  #banner p {
+    display: none;
+  }
 
-	#banner .tertiarybtn {
-		border: 2px solid #faf9f9;
-	}
-	#banner .primarybtn {
-		border: 2px solid #af4b31;
-	}
-	.card {
-		flex-basis: 40%;
-	}
+  #banner .tertiarybtn {
+    border: 2px solid #faf9f9;
+  }
+  #banner .primarybtn {
+    border: 2px solid #af4b31;
+  }
+  .card {
+    flex-basis: 40%;
+  }
 
-	#card3 {
-		display: none;
-	}
-	#contactform {
-		min-height: 90vh;
-		height: auto;
-	}
-	#contactform .container .left {
-		display: none;
-	}
-	#contactform .container .right {
-		padding: 0;
-	}
-	#contactform .container {
-		grid-template-columns: 1fr;
-		padding: 0 10%;
-	}
+  #card3 {
+    display: none;
+  }
+  #contactform {
+    min-height: 90vh;
+    height: auto;
+  }
+  #contactform .container .left {
+    display: none;
+  }
+  #contactform .container .right {
+    padding: 0;
+  }
+  #contactform .container {
+    grid-template-columns: 1fr;
+    padding: 0 10%;
+  }
 }
 
 @media screen and (max-width: 500px) {
-	#card2 {
-		display: none;
-	}
-	.cards {
-		flex-direction: column;
-	}
+  #card2 {
+    display: none;
+  }
+  .cards {
+    flex-direction: column;
+  }
 }
