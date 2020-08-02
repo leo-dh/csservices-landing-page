@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="wrapper">
     <div class="h-screen bg-cover bg-center herobg flex justify-center items-start flex-col px-6">
       <h2 class="font-bold text-3xl text-white text-left leading-relaxed">
         Incorporate and Register your company with us today for a
@@ -24,8 +24,8 @@ export default Vue.extend({});
 </script>
 
 <style>
-.container {
-  @apply min-h-screen flex justify-center items-center text-center mx-auto;
+.wrapper {
+  @apply min-h-screen flex justify-center items-center text-center w-screen;
 }
 
 .herobg {
