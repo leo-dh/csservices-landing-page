@@ -24,7 +24,7 @@
         <nuxt-link
           :key="i"
           :to="route.to"
-          class="block px-2 py-1 my-1 hover:bg-brick-500 hover:text-navy-500 rounded text-white font-semibold sm:inline-block sm:my-0"
+          class="block px-2 py-1 my-1 hover:bg-brick-500 text-white font-semibold sm:inline-block sm:my-0 rounded"
           exact-active-class="activeLink"
           >{{ route.title }}</nuxt-link
         >

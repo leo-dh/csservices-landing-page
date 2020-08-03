@@ -35,6 +35,9 @@ module.exports = {
           900: '#35170F',
         },
       },
+      spacing: {
+        full: '100%',
+      },
     },
   },
   variants: {},
