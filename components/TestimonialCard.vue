@@ -1,9 +1,19 @@
 <template>
   <div class="flex rounded-lg bg-white px-4 py-6">
     <img :src="testimonialCardData.imgSrc" :alt="testimonialCardData.imgAlt" class="hidden" />
-    <div>
-      <p class="text-sm text-gray-700 italic quotes">{{ testimonialCardData.quote }}</p>
-      <h4 class="font-semibold mt-2">{{ testimonialCardData.company }}</h4>
+    <div class="text-left">
+      <p class="text-sm text-gray-700 italic quotes pl-4">{{ testimonialCardData.quote }}</p>
+      <div class="pl-4 flex items-center mt-4">
+        <img
+          class="w-10 h-10 rounded-full mr-4 shadow-inner"
+          :src="testimonialCardData.imgSrc"
+          :alt="testimonialCardData.imgAlt"
+        />
+        <div>
+          <h4 class="font-semibold text-gray-800">{{ testimonialCardData.company }}</h4>
+          <p class="text-xs text-gray-700">{{ testimonialCardData.date }}</p>
+        </div>
+      </div>
     </div>
   </div>
 </template>
