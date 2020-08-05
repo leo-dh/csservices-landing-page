@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-200 min-h-screen w-screen py-10 px-6">
+  <div class="bg-gray-200 py-10 section-container">
     <h1 class="font-bold text-navy-500 text-3xl mb-4">Testimonials</h1>
     <template v-for="(testimonialCard, i) in testimonialCards">
       <testimonial-card :key="i" :testimonial-card-data="testimonialCard" class="my-6" />

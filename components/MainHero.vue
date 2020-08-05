@@ -1,6 +1,6 @@
 <template>
   <div
-    class="h-screen w-screen bg-cover bg-center herobg flex justify-center items-start flex-col px-6"
+    class="h-screen bg-cover bg-center herobg flex justify-center items-start flex-col section-container"
   >
     <h2
       class="font-bold text-3xl text-white text-left leading-relaxed md:w-3/5 lg:w-3/5 lg:text-5xl lg:leading-snug"
@@ -12,7 +12,10 @@
       hassle-free experience for you.
     </p>
     <div class="mt-6 flex flex-wrap">
-      <button class="rounded bg-brick-500 text-white p-2 mt-2 btn-min-width mr-2">
+      <button
+        class="rounded bg-brick-500 text-white p-2 mt-2 btn-min-width mr-2"
+        @click="scrollToView"
+      >
         Get Quotation Now
       </button>
       <button
@@ -34,7 +37,14 @@
 <script lang="ts">
 import Vue from 'vue';
 
-export default Vue.extend({});
+export default Vue.extend({
+  methods: {
+    scrollToView(): void {
+      const el = document.getElementById('contactsection');
+      el?.scrollIntoView({ behavior: 'smooth' });
+    },
+  },
+});
 </script>
 
 <style scoped>

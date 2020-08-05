@@ -2,3 +2,13 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+.section-container {
+  @apply px-6 w-screen;
+  @screen sm {
+    @apply px-10;
+  }
+  @screen md {
+    @apply px-16;
+  }
+}

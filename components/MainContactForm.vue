@@ -1,6 +1,6 @@
 <template>
-  <div class="w-screen py-6 bg-blue-100 px-6">
-    <div>
+  <div id="contactsection" class="py-10 bg-blue-100 section-container">
+    <div class="text-left">
       <h2 class="text-2xl font-bold text-navy-500">Send us an enquiry now!</h2>
       <p class="text-sm text-gray-700 mt-4">
         Our consultants will contact you within an hour of your submission. If your submission is
@@ -42,7 +42,7 @@
         >
         <textarea
           id="comments"
-          rows="4"
+          rows="3"
           resize
           placeholder="E.g. Please contact me after 1500H."
           class="w-full shadow border focus:shadow-outline focus:outline-none px-3 py-2 text-sm"
