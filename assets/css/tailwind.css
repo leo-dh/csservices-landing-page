@@ -1,14 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@tailwind base;
+@tailwind components;
 
-.section-container {
-  @apply px-6 w-screen;
+.content-area {
+  @apply px-6 py-10;
   @screen sm {
     @apply px-10;
   }
   @screen md {
-    @apply px-16;
+    @apply px-16 py-16;
+  }
+  @screen xl {
+    @apply max-w-screen-xl py-24;
   }
 }
+
+@tailwind utilities;

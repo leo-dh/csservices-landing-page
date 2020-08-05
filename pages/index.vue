@@ -1,8 +1,14 @@
 <template>
-  <div class="wrapper">
+  <div class="wrapper bg-gray-200">
     <main-hero />
     <testimonials />
     <main-contact-form />
+
+    <div class="w-screen bg-gray-200 flex justify-center items-center lg:my-16 xl:my-24">
+      <div class="content-area">
+        <h1>Placeholder Section</h1>
+      </div>
+    </div>
   </div>
 </template>
 

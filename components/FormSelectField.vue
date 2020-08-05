@@ -1,12 +1,12 @@
 <template>
   <div>
-    <label class="block text-gray-700 text-sm font-bold mb-2" :for="selectFieldId">{{
+    <label class="block text-gray-700 text-sm font-bold mb-2 xl:text-base" :for="selectFieldId">{{
       label
     }}</label>
     <div class="relative">
       <select
         :id="selectFieldId"
-        class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-2 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline text-sm"
+        class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-2 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline text-sm xl:text-base"
       >
         <template v-for="(option, i) in options">
           <option :key="i" :value="option.value"> {{ option.text }}</option>

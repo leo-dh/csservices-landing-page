@@ -1,35 +1,35 @@
 <template>
-  <div
-    class="h-screen bg-cover bg-center herobg flex justify-center items-start flex-col section-container"
-  >
-    <h2
-      class="font-bold text-3xl text-white text-left leading-relaxed md:w-3/5 lg:w-3/5 lg:text-5xl lg:leading-snug"
-    >
-      Register and Incorporate <span class="text-brick-500">your company</span> with us today!
-    </h2>
-    <p class="hidden lg:block lg:w-3/5 text-gray-400 text-left mt-8">
-      Our experienced consultants will guide you along the incorportion procedure, ensuring a
-      hassle-free experience for you.
-    </p>
-    <div class="mt-6 flex flex-wrap">
-      <button
-        class="rounded bg-brick-500 text-white p-2 mt-2 btn-min-width mr-2"
-        @click="scrollToView"
+  <div class="h-screen w-screen bg-cover bg-center herobg flex justify-center items-center">
+    <div class="flex justify-center items-start flex-col content-area">
+      <h2
+        class="font-bold text-3xl text-white text-left leading-relaxed md:w-3/5 lg:w-3/5 lg:text-5xl lg:leading-snug"
       >
-        Get Quotation Now
-      </button>
-      <button
-        class="rounded bg-transparent text-gray-100 p-2 mt-2 border-gray-400 border-2 btn-min-width"
-      >
-        Learn More
-        <svg class="h-4 w-4 fill-current inline-block ml-2" viewBox="0 0 20 20">
-          <path
-            fill-rule="evenodd"
-            d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-            clip-rule="evenodd"
-          />
-        </svg>
-      </button>
+        Register and Incorporate <span class="text-brick-500">your company</span> with us today!
+      </h2>
+      <p class="hidden lg:block lg:w-3/5 text-gray-400 text-left mt-8">
+        Our experienced consultants will guide you along the incorportion procedure, ensuring a
+        hassle-free experience for you.
+      </p>
+      <div class="mt-6 flex flex-wrap">
+        <button
+          class="rounded bg-brick-500 text-white p-2 mt-2 btn-min-width mr-2"
+          @click="scrollToView"
+        >
+          Get Quotation Now
+        </button>
+        <button
+          class="rounded bg-transparent text-gray-100 p-2 mt-2 border-gray-400 border-2 btn-min-width"
+        >
+          Learn More
+          <svg class="h-4 w-4 fill-current inline-block ml-2" viewBox="0 0 20 20">
+            <path
+              fill-rule="evenodd"
+              d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </button>
+      </div>
     </div>
   </div>
 </template>

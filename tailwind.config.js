@@ -38,6 +38,9 @@ module.exports = {
       spacing: {
         full: '100%',
       },
+      flex: {
+        '2': '2 1 0%',
+      },
     },
   },
   variants: {},
