@@ -1,5 +1,5 @@
 <template>
-  <div class="w-screen bg-gray-200 flex items-center justify-center">
+  <div class="w-screen bg-gray-100 flex items-center justify-center">
     <div class="content-area w-full">
       <h1 class="font-bold text-navy-500 text-3xl mb-4 xl:text-4xl">Testimonials</h1>
       <div class="flex flex-col lg:flex-row lg:justify-around">

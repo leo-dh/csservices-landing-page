@@ -1,12 +1,19 @@
 <template>
-  <div class="wrapper bg-gray-200">
+  <div class="wrapper bg-gray-100">
     <main-hero />
     <testimonials />
     <main-contact-form />
 
-    <div class="w-screen bg-gray-200 flex justify-center items-center lg:my-16 xl:my-24">
-      <div class="content-area">
-        <h1>Placeholder Section</h1>
+    <div class="w-screen bg-gray-100 flex justify-center items-center lg:my-16 xl:my-24">
+      <div class="content-area flex justify-center items-center flex-col">
+        <h1 class="text-2xl lg:text-3xl xl:text-4xl font-bold">
+          Need more information on incorporation?
+        </h1>
+        <nuxt-link
+          to="/services"
+          class="mt-4 lg:mt-10 border-brick-500 border-2 rounded-lg lg:px-8 lg:py-4 text-lg px-4 py-2"
+          >Click here to find out!</nuxt-link
+        >
       </div>
     </div>
   </div>
