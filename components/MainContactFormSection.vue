@@ -12,7 +12,7 @@
       </div>
 
       <div
-        class="flex justify-center items-center lg:bg-white lg:px-12 lg:py-12 lg:rounded-lg lg:shadow-lg"
+        class="flex justify-center items-center lg:bg-white lg:px-12 lg:py-12 lg:rounded-lg lg:shadow-xl"
       >
         <div id="contactsection">
           <div class="text-left lg:hidden">
