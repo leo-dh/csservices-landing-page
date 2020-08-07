@@ -1,7 +1,7 @@
 <template>
   <footer class="bg-navy-500 flex items-start justify-center">
     <div
-      class="text-white flex flex-col items-start py-10 px-16 text-xs md:text-sm lg:py-24 lg:text-base lg:flex-row xl:max-w-screen-xl xl:w-full"
+      class="text-white flex flex-col items-start py-10 px-10 text-xs md:text-sm lg:py-24 lg:text-base lg:flex-row xl:max-w-screen-xl xl:w-full"
     >
       <div class="lg:flex-1">
         <h1 class="font-bold uppercase text-xl">CSSServices</h1>

@@ -1,7 +1,12 @@
 <template>
-  <div class="w-screen bg-cover bg-center flex flex-col justify-center py-16 px-8" :style="style">
-    <h1 class="text-white text-3xl font-bold">{{ title }}</h1>
-    <p class="text-gray-500 text-sm mt-2">{{ subtitle }}</p>
+  <div
+    class="w-screen bg-cover bg-center flex flex-col justify-center h-screen-1/3 items-center"
+    :style="style"
+  >
+    <div class="content-area w-full">
+      <h1 class="text-white text-3xl font-bold">{{ title }}</h1>
+      <p class="text-gray-500 text-sm mt-2">{{ subtitle }}</p>
+    </div>
   </div>
 </template>
 
@@ -16,11 +21,11 @@ export default Vue.extend({
     },
     title: {
       type: String,
-      default: 'Title',
+      default: '',
     },
     subtitle: {
       type: String,
-      default: 'Subtitle',
+      default: '',
     },
   },
   data() {

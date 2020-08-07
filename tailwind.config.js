@@ -41,6 +41,12 @@ module.exports = {
       flex: {
         '2': '2 1 0%',
       },
+      height: {
+        'screen-1/2': '50vh',
+        'screen-1/3': 'calc(100vh / 3)',
+        'screen-1/4': '25vh',
+        'screen-1/5': '20vh',
+      },
     },
   },
   variants: {},
