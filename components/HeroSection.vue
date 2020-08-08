@@ -4,7 +4,7 @@
     :style="style"
   >
     <div class="content-area w-full">
-      <h1 class="text-white text-3xl font-bold">{{ title }}</h1>
+      <h1 class="text-white text-3xl font-bold xl:text-4xl">{{ title }}</h1>
       <p class="text-gray-500 text-sm mt-2">{{ subtitle }}</p>
     </div>
   </div>
