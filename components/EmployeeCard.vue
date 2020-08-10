@@ -8,7 +8,7 @@
       class="front bg-cover bg-center flex items-end justify-end w-full h-full"
       :style="style"
     >
-      <div class="p-4">
+      <div class="p-4 text-right">
         <h3 class="font-bold text-lg text-white">{{ name }}</h3>
         <p class="text-sm text-gray-200">{{ position }}</p>
       </div>

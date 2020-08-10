@@ -19,11 +19,14 @@
           Meet The Team
         </h1>
         <div class="mt-6 grid-container lg:mt-12 gap-4">
-          <employee-card />
-          <employee-card />
-          <employee-card />
-          <employee-card />
-          <employee-card />
+          <template v-for="(employee, i) in employees">
+            <employee-card
+              :key="i"
+              :name="employee.name"
+              :img-src="employee.imgSrc"
+              :position="employee.position"
+            />
+          </template>
         </div>
       </div>
     </div>
@@ -55,6 +58,63 @@ export default Vue.extend({
         {
           title: 'Our Values',
           text: 'Commitment. Quality. Respect',
+        },
+      ],
+      employees: [
+        {
+          imgSrc: 'faces/MjIyNTUuanBn.jpg',
+          name: 'Gretel',
+          position: 'Chief Executive Officer',
+        },
+        {
+          imgSrc: 'faces/NTI3NzIuanBn.jpg',
+          name: 'Kye',
+          position: 'Cheif Operations Officer',
+        },
+        {
+          imgSrc: 'faces/NTUzMzguanBn.jpg',
+          name: 'Danny',
+          position: 'General Manager',
+        },
+        {
+          imgSrc: 'faces/OTUwMjkuanBn.jpg',
+          name: 'Spencer',
+          position: 'Head of Sales',
+        },
+        {
+          imgSrc: 'faces/XzA0NDY1MDEuanBn.jpg',
+          name: 'Zarya',
+          position: 'Lead Consultant',
+        },
+        {
+          imgSrc: 'faces/XzAzNjk0MTUuanBn.jpg',
+          name: 'Joseph',
+          position: 'Consultant',
+        },
+        {
+          imgSrc: 'faces/OTk4NzAuanBn.jpg',
+          name: 'Ruby',
+          position: 'Consultant',
+        },
+        {
+          imgSrc: 'faces/XzAyNjQ1NjEuanBn.jpg',
+          name: 'Jen',
+          position: 'Consultant',
+        },
+        {
+          imgSrc: 'faces/XzA4OTI2NjcuanBn.jpg',
+          name: 'Samuel',
+          position: 'Consultant',
+        },
+        {
+          imgSrc: 'faces/XzAxNDQyNzQuanBn.jpg',
+          name: 'Elise',
+          position: 'Admin Assistant',
+        },
+        {
+          imgSrc: 'faces/XzA4MzYxMDIuanBn.jpg',
+          name: 'Casey',
+          position: 'Admin Assistant',
         },
       ],
     };
