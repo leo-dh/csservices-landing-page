@@ -5,7 +5,7 @@
         {{ titleText }}
       </h1>
       <nuxt-link
-        to="/services"
+        :to="linkPath"
         class="text-sm mt-8 lg:mt-10 border-brick-500 border-2 rounded-lg lg:px-8 lg:py-4 lg:text-lg px-4 py-2"
         >{{ buttonText }}</nuxt-link
       >
@@ -25,6 +25,10 @@ export default Vue.extend({
     buttonText: {
       type: String,
       required: true,
+    },
+    linkPath: {
+      type: String,
+      default: '/',
     },
   },
 });

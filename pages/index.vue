@@ -6,6 +6,7 @@
     <banner-section
       title-text="Need more information on incorporation?"
       button-text="Click here to find out!"
+      link-path="/services"
     />
   </div>
 </template>

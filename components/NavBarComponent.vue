@@ -52,6 +52,12 @@ export default Vue.extend({
       ],
     };
   },
+  watch: {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    $route(newValue, oldValue) {
+      this.drawerOpen = false;
+    },
+  },
 });
 </script>
 
