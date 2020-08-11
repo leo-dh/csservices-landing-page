@@ -1,7 +1,7 @@
 <template>
-  <div class="w-screenflex justify-center items-center lg:my-16 xl:my-24">
+  <div class="w-screen flex justify-center items-center">
     <div class="content-area flex justify-center items-center flex-col">
-      <h1 class="text-2xl lg:text-3xl xl:text-4xl font-bold">
+      <h1 class="text-2xl lg:text-3xl xl:text-4xl font-bold text-center">
         {{ titleText }}
       </h1>
       <nuxt-link

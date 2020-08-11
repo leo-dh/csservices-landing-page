@@ -7,6 +7,7 @@
       title-text="Need more information on incorporation?"
       button-text="Click here to find out!"
       link-path="/services"
+      class="lg: my-16 xl:my-24"
     />
   </div>
 </template>

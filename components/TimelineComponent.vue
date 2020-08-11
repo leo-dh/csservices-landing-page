@@ -1,7 +1,7 @@
 <template>
   <div class="flex py-4">
     <div
-      class="rounded-full bg-green-300 h-16 w-16 flex items-center justify-center flex-shrink-0 circle"
+      class="rounded-full bg-green-300 h-16 w-16 flex items-center justify-center flex-shrink-0 circle font-bold text-lg"
     >
       {{ stepNum }}
     </div>

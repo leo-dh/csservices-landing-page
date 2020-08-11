@@ -1,12 +1,12 @@
 <template>
-  <div>
+  <div class="flex flex-col justify-center items-center">
     <hero-section
       img-src="images/loui-kiaer-CielzQJR0SQ-unsplash.jpg"
       title="Services"
       subtitle="Getting started simplified"
     />
-    <div class="content-area">
-      <div class="flex flex-col items-center align-center text-center text-2xl">
+    <div class="content-area w-full">
+      <div class="flex flex-col items-center align-center text-center text-2xl xl:text-3xl">
         <h2 class="font-bold text-navy-500">
           Registering and Incoporating a company is kind of complicated..
         </h2>
@@ -20,22 +20,44 @@
         </template>
       </div>
       <div>
-        <h2 class="font-bold text-navy-500 text-xl">
+        <h2 class="font-bold text-navy-500 text-xl text-center lg:text-2xl xl:text-3xl">
           What you can expect at base price - <span class="text-brick-500">$678</span>
         </h2>
-        <div></div>
+        <div class="grid-container mt-6 gap-8 md:mt-10 lg:mt-12">
+          <template v-for="(benefit, i) in benefits">
+            <div :key="i" class="flex items-center px-4">
+              <img :src="benefit.imgSrc" alt="" class="w-10 h-10" />
+              <p class="ml-8 text-navy-500 flex-grow text-center md:flex-grow-0 md:text-left">
+                {{ benefit.text }}
+              </p>
+            </div>
+          </template>
+        </div>
       </div>
-      <div>
-        <h2 class="font-bold text-navy-500 text-xl">
-          Addtional add-ons<span class="text-brick-500">*</span> should you require them
+      <div class="mt-12 md:mt-16 lg:mt-24">
+        <h2 class="font-bold text-navy-500 text-xl text-center lg:text-2xl xl:text-3xl">
+          Additional add-ons<span class="text-brick-500">*</span> should you require them
         </h2>
-        <div></div>
+        <div class="grid-container mt-6 gap-8 md:mt-10 lg:mt-12">
+          <template v-for="(addon, i) in addons">
+            <div :key="i" class="flex items-center px-4">
+              <img :src="addon.imgSrc" alt="" class="w-10 h-10" />
+              <p class="ml-8 text-navy-500 flex-grow text-center md:flex-grow-0 md:text-left">
+                {{ addon.text }}
+              </p>
+            </div>
+          </template>
+        </div>
+        <div class="text-navy-500 text-sm italic mt-12 md:mt-16 text-center md:text-left">
+          * Subjected to additional costs
+        </div>
       </div>
     </div>
     <banner-section
       button-text="Contact Us Now!"
       title-text="Any Further Questions?"
       link-path="/contactus"
+      class="bg-gray-200"
     />
   </div>
 </template>
@@ -60,7 +82,28 @@ export default Vue.extend({
         'Prepare Information',
         'Setup a Bank account for your business',
       ],
+      benefits: [
+        { imgSrc: 'svg/price.svg', text: 'No Miscellaneous Fee' },
+        { imgSrc: 'svg/document.svg', text: 'Incorporation Documents' },
+        { imgSrc: 'svg/portfolio.svg', text: 'Working Biz Profile' },
+        { imgSrc: 'svg/stamp.svg', text: 'Common Seal and Stamp' },
+        { imgSrc: 'svg/bank.svg', text: 'Opening of Bank Account' },
+        { imgSrc: 'svg/year.svg', text: 'Company Secretarial Services for 1 year' },
+      ],
+      addons: [
+        { imgSrc: 'svg/user.svg', text: 'Local Director Service' },
+        { imgSrc: 'svg/id-card.svg', text: 'Any form of Employment Pass' },
+        { imgSrc: 'svg/address.svg', text: 'Local Address Service' },
+        { imgSrc: 'svg/mail.svg', text: 'Mail Forwarding' },
+      ],
     };
   },
 });
 </script>
+
+<style scoped>
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+}
+</style>
