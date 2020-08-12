@@ -16,7 +16,12 @@
       </div>
       <div class="my-12">
         <template v-for="(step, i) in steps">
-          <timeline-component :key="i" :text="step" :step-num="i + 1" />
+          <timeline-component
+            :key="i"
+            :text="step.text"
+            :step-num="i + 1"
+            :circle-classes="step.circleClasses"
+          />
         </template>
       </div>
       <div>
@@ -77,10 +82,22 @@ export default Vue.extend({
   data() {
     return {
       steps: [
-        'Think of your company name!',
-        'Contact Us',
-        'Prepare Information',
-        'Setup a Bank account for your business',
+        {
+          text: 'Think of your company name!',
+          circleClasses: ['bg-brick-200', 'text-white'],
+        },
+        {
+          text: 'Contact Us',
+          circleClasses: ['bg-brick-300', 'text-white'],
+        },
+        {
+          text: 'Prepare Information',
+          circleClasses: ['bg-brick-400', 'text-white'],
+        },
+        {
+          text: 'Setup a Bank account for your business',
+          circleClasses: ['bg-brick-500', 'text-white'],
+        },
       ],
       benefits: [
         { imgSrc: 'svg/price.svg', text: 'No Miscellaneous Fee' },
