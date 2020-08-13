@@ -42,7 +42,7 @@
         You can indicate your preferred mode of contact and when you want to be contacted.
       </p>
     </div>
-    <button class="mt-6 bg-brick-500 text-white rounded font-bold px-4 py-2 xl:text-lg">
+    <button class="mt-6 bg-peach-500 text-white rounded font-bold px-4 py-2 xl:text-lg">
       SUBMIT
     </button>
   </form>

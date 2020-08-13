@@ -27,7 +27,7 @@
           <nuxt-link
             :key="i"
             :to="route.to"
-            class="block px-2 py-1 my-1 hover:bg-brick-500 text-white font-semibold sm:inline-block sm:my-0 rounded lg:text-lg lg:px-4 lg:py-2"
+            class="block px-2 py-1 my-1 hover:bg-peach-500 text-white font-semibold sm:inline-block sm:my-0 rounded lg:text-lg lg:px-4 lg:py-2"
             exact-active-class="activeLink"
             >{{ route.title }}</nuxt-link
           >
@@ -63,7 +63,7 @@ export default Vue.extend({
 
 <style scoped>
 .activeLink {
-  @apply text-brick-500;
+  @apply text-peach-500;
 }
 .activeLink:hover {
   @apply bg-transparent;

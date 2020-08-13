@@ -4,7 +4,7 @@
       <h2
         class="font-bold text-3xl text-white text-left leading-relaxed md:w-3/5 lg:w-3/5 lg:text-5xl lg:leading-snug"
       >
-        Register and Incorporate <span class="text-brick-500">your company</span> with us today!
+        Register and Incorporate <span class="text-peach-500">your company</span> with us today!
       </h2>
       <p class="hidden lg:block lg:w-3/5 text-gray-400 text-left mt-8">
         Our experienced consultants will guide you along the incorportion procedure, ensuring a
@@ -12,7 +12,7 @@
       </p>
       <div class="mt-6 flex flex-wrap">
         <button
-          class="rounded bg-brick-500 text-white p-2 mt-2 btn-min-width mr-2"
+          class="rounded bg-peach-600 text-white p-2 mt-2 btn-min-width mr-2 font-bold"
           @click="scrollToView"
         >
           Get Quotation Now

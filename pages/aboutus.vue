@@ -9,7 +9,7 @@
       <div class="flex flex-col lg:flex-row pb-12 lg:pb-16">
         <template v-for="(section, i) in sections">
           <div :key="i" class="text-center mt-10 lg:w-1/3 lg:px-6 lg:mt-0 first:mt-0">
-            <h2 class="font-bold text-xl text-brick-500 lg:text-2xl">{{ section.title }}</h2>
+            <h2 class="font-bold text-xl text-peach-600 lg:text-2xl">{{ section.title }}</h2>
             <p class="text-sm lg:text-base mt-2 lg:mt-6">{{ section.text }}</p>
           </div>
         </template>

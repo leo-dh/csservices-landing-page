@@ -6,7 +6,7 @@
       </h1>
       <nuxt-link
         :to="linkPath"
-        class="text-sm mt-8 lg:mt-10 border-brick-500 border-2 rounded-lg lg:px-8 lg:py-4 lg:text-lg px-4 py-2"
+        class="text-sm mt-8 lg:mt-10 border-peach-600 border-2 rounded-lg lg:px-8 lg:py-4 lg:text-lg px-4 py-2"
         >{{ buttonText }}</nuxt-link
       >
     </div>

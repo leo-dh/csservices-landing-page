@@ -11,7 +11,7 @@
           Registering and Incoporating a company is kind of complicated..
         </h2>
         <p class="text-navy-500 mt-8">
-          but you only need to know these <span class="text-brick-500">4</span> steps.
+          but you only need to know these <span class="text-peach-500">4</span> steps.
         </p>
       </div>
       <div class="my-12">
@@ -26,7 +26,7 @@
       </div>
       <div>
         <h2 class="font-bold text-navy-500 text-xl text-center lg:text-2xl xl:text-3xl">
-          What you can expect at base price - <span class="text-brick-500">$678</span>
+          What you can expect at base price - <span class="text-peach-500">$678</span>
         </h2>
         <div class="grid-container mt-6 gap-8 md:mt-10 lg:mt-12">
           <template v-for="(benefit, i) in benefits">
@@ -41,7 +41,7 @@
       </div>
       <div class="mt-12 md:mt-16 lg:mt-24">
         <h2 class="font-bold text-navy-500 text-xl text-center lg:text-2xl xl:text-3xl">
-          Additional add-ons<span class="text-brick-500">*</span> should you require them
+          Additional add-ons<span class="text-peach-500">*</span> should you require them
         </h2>
         <div class="grid-container mt-6 gap-8 md:mt-10 lg:mt-12">
           <template v-for="(addon, i) in addons">
@@ -83,20 +83,24 @@ export default Vue.extend({
     return {
       steps: [
         {
-          text: 'Think of your company name!',
-          circleClasses: ['bg-brick-200', 'text-white'],
+          text:
+            '<span class="font-semibold text-lg text-navy-500" > Think of your company name! </span> <span class="block text-sm text-gray-800 mt-4"> Probably something that you are not going to regret in a week\'s time. </span>',
+          circleClasses: ['bg-peach-400', 'text-white'],
         },
         {
-          text: 'Contact Us',
-          circleClasses: ['bg-brick-300', 'text-white'],
+          text:
+            '<span class="font-semibold text-lg text-navy-500" >Contact Us</span> <span class="block text-sm text-gray-800 mt-4">Call our office hotline or head over to the <a href="/contactus" class="underline" >contact page</a> to make an appointment! </span>',
+          circleClasses: ['bg-peach-500', 'text-white'],
         },
         {
-          text: 'Prepare Information',
-          circleClasses: ['bg-brick-400', 'text-white'],
+          text:
+            '<span class="font-semibold text-lg text-navy-500" >Prepare Information</span> <span class="block text-sm text-gray-800 mt-4">Don\'t worry! We will guide you on what information is necessary to complete the process. </span>',
+          circleClasses: ['bg-peach-600', 'text-white'],
         },
         {
-          text: 'Setup a Bank account for your business',
-          circleClasses: ['bg-brick-500', 'text-white'],
+          text:
+            '<span class="font-semibold text-lg text-navy-500" >Setup a Bank account for your business</span> <span class="block text-sm text-gray-800 mt-4">Choose a bank of your choice and you\'re ready to go.</span>',
+          circleClasses: ['bg-peach-700', 'text-white'],
         },
       ],
       benefits: [
