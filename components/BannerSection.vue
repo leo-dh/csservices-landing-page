@@ -6,7 +6,7 @@
       </h1>
       <nuxt-link
         :to="linkPath"
-        class="text-sm mt-8 lg:mt-10 border-peach-600 border-2 rounded-lg lg:px-8 lg:py-4 lg:text-lg px-4 py-2"
+        class="text-sm mt-8 lg:mt-10 border-peach-600 border-2 rounded-lg lg:px-8 lg:py-4 lg:text-lg px-4 py-2 banner-btn"
         >{{ buttonText }}</nuxt-link
       >
     </div>
@@ -33,3 +33,12 @@ export default Vue.extend({
   },
 });
 </script>
+
+<style scoped>
+.banner-btn {
+  transition: all 0.3s ease-in-out;
+}
+.banner-btn:hover {
+  @apply bg-peach-600 text-white;
+}
+</style>

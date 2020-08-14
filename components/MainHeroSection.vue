@@ -12,13 +12,13 @@
       </p>
       <div class="mt-6 flex flex-wrap">
         <button
-          class="rounded bg-peach-600 text-white p-2 mt-2 btn-min-width mr-2 font-bold"
+          class="rounded bg-peach-600 text-white p-2 mt-2 btn-min-width mr-2 primary-btn"
           @click="scrollToView"
         >
-          Get Quotation Now
+          <span class="font-bold">Get Quotation Now</span>
         </button>
         <button
-          class="rounded bg-transparent text-gray-100 p-2 mt-2 border-gray-400 border-2 btn-min-width"
+          class="rounded bg-transparent text-gray-100 p-2 mt-2 border-gray-400 border-2 btn-min-width secondary-btn"
         >
           Learn More
           <svg class="h-4 w-4 fill-current inline-block ml-2" viewBox="0 0 20 20">
@@ -54,6 +54,25 @@ export default Vue.extend({
 }
 
 .btn-min-width {
-  min-width: 18ch;
+  min-width: 19ch;
+}
+
+.primary-btn {
+  transition: all 0.3s ease-in-out;
+}
+.primary-btn:hover {
+  @apply bg-gray-700;
+}
+
+.secondary-btn {
+  transition: all 0.3s ease-in-out;
+}
+.secondary-btn:hover {
+  @apply border-peach-500;
+}
+
+.secondary-btn:hover > svg {
+  transform: translateX(10px);
+  transition: all 0.3s ease-out;
 }
 </style>

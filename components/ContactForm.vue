@@ -42,7 +42,7 @@
         You can indicate your preferred mode of contact and when you want to be contacted.
       </p>
     </div>
-    <button class="mt-6 bg-peach-500 text-white rounded font-bold px-4 py-2 xl:text-lg">
+    <button class="mt-6 bg-peach-500 text-white rounded font-bold px-4 py-2 xl:text-lg form-btn">
       SUBMIT
     </button>
   </form>
@@ -71,4 +71,11 @@ export default Vue.extend({
 });
 </script>
 
-<style scoped></style>
+<style scoped>
+.form-btn {
+  transition: all 0.3s ease-in-out;
+}
+.form-btn:hover {
+  @apply bg-gray-700;
+}
+</style>
