@@ -1,7 +1,7 @@
 <template>
   <header class="bg-navy-500 xl:flex xl:items-center xl:justify-center">
     <div
-      class="sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-4 lg:px-8 xl:max-w-screen-xl xl:w-full"
+      class="sm:flex sm:justify-between sm:items-center sm:px-4 lg:px-8 xl:max-w-screen-xl xl:w-full"
     >
       <div class="flex justify-between items-center px-4 py-4 sm:p-0">
         <h1 class="uppercase font-bold text-xl text-white">CSServices</h1>
@@ -27,7 +27,7 @@
           <nuxt-link
             :key="i"
             :to="route.to"
-            class="block px-2 py-1 my-1 hover:bg-peach-500 text-white font-semibold sm:inline-block sm:my-0 rounded lg:text-lg lg:px-4 lg:py-2"
+            class="block px-2 py-1 my-1 hover:bg-peach-500 sm:hover:bg-transparent sm:hover:text-peach-500 text-white font-semibold sm:inline-block sm:my-0 sm:py-4 sm:mx-1 rounded lg:text-lg lg:px-4 lg:py-6 linkUnderline"
             exact-active-class="activeLink"
             >{{ route.title }}</nuxt-link
           >
@@ -64,8 +64,36 @@ export default Vue.extend({
 <style scoped>
 .activeLink {
   @apply text-peach-500;
+  position: relative;
+}
+.activeLink.linkUnderline::after {
+  @screen sm {
+    transform: scaleX(1);
+  }
 }
 .activeLink:hover {
   @apply bg-transparent;
+}
+.linkUnderline {
+  @screen sm {
+    position: relative;
+    transition: color 0.2s ease-out;
+  }
+}
+.linkUnderline::after {
+  @screen sm {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    @apply bg-peach-500;
+    transform: scaleX(0);
+    transition: transform 0.2s ease-out;
+  }
+}
+.linkUnderline:hover::after {
+  transform: scaleX(1);
 }
 </style>
