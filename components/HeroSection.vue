@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-screen bg-cover bg-center flex flex-col justify-center h-screen-1/3 items-center"
+    class="w-screen bg-cover bg-center flex flex-col justify-center items-center h-auto"
     :style="style"
   >
     <div class="content-area w-full">

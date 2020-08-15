@@ -1,5 +1,7 @@
 <template>
-  <div class="h-screen w-screen bg-cover bg-center herobg flex justify-center items-center">
+  <div
+    class="min-h-screen w-screen bg-cover bg-center herobg flex justify-center items-center h-auto"
+  >
     <div class="flex justify-center items-start flex-col content-area">
       <h2
         class="font-bold text-3xl text-white text-left leading-relaxed md:w-3/5 lg:w-3/5 lg:text-5xl lg:leading-snug"

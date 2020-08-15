@@ -31,11 +31,11 @@ export default Vue.extend({
     },
     circleClasses: {
       type: Array as () => Array<String>,
-      default: ['bg-gray-300'],
+      default: () => ['bg-gray-300'],
     },
     speechBubbleClasses: {
       type: Array as () => Array<String>,
-      default: ['bg-gray-300', 'border-gray-300'],
+      default: () => ['bg-gray-300', 'border-gray-300'],
     },
   },
 });
