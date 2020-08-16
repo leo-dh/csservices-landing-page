@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper bg-gray-300">
+  <div class="wrapper bg-gray-300 page-transition">
     <main-hero-section />
     <testimonial-section />
     <main-contact-form-section />
@@ -13,13 +13,14 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
 import MainHeroSection from '@/components/MainHeroSection.vue';
 import TestimonialSection from '@/components/TestimonialSection.vue';
 import MainContactFormSection from '@/components/MainContactFormSection.vue';
 import BannerSection from '@/components/BannerSection.vue';
+import mixins from 'vue-typed-mixins';
+import PageTransitionMixin from '@/mixins/PageTransitionMixin';
 
-export default Vue.extend({
+export default mixins(PageTransitionMixin).extend({
   components: {
     MainHeroSection,
     TestimonialSection,
@@ -31,6 +32,6 @@ export default Vue.extend({
 
 <style>
 .wrapper {
-  @apply min-h-screen flex flex-col justify-center items-center text-center w-screen;
+  @apply flex flex-col justify-center items-center text-center w-screen;
 }
 </style>

@@ -20,7 +20,8 @@
   },
   "dependencies": {
     "@nuxt/typescript-runtime": "^1.0.0",
-    "nuxt": "^2.14.0"
+    "nuxt": "^2.14.0",
+    "vue-typed-mixins": "^0.2.0"
   },
   "devDependencies": {
     "@nuxt/types": "^2.14.0",

@@ -22,7 +22,9 @@
         <button
           class="rounded bg-transparent text-gray-100 p-2 mt-2 border-gray-400 border-2 btn-min-width secondary-btn"
         >
-          Learn More
+          <nuxt-link to="/services">
+            Learn More
+          </nuxt-link>
           <svg class="h-4 w-4 fill-current inline-block ml-2" viewBox="0 0 20 20">
             <path
               fill-rule="evenodd"
@@ -70,7 +72,7 @@ export default Vue.extend({
   transition: all 0.3s ease-in-out;
 }
 .secondary-btn:hover {
-  @apply border-peach-500;
+  @apply border-peach-500 text-peach-500;
 }
 
 .secondary-btn:hover > svg {

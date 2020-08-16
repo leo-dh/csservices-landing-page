@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col justify-center items-center">
+  <div class="flex flex-col justify-center items-center page-transition">
     <hero-section
       img-src="images/perry-grone-lbLgFFlADrY-unsplash.jpg"
       title="About Us"

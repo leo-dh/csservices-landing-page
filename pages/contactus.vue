@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col justify-center items-center">
+  <div class="flex flex-col justify-center items-center page-transition">
     <hero-section
       img-src="images/sean-pollock-PhYq704ffdA-unsplash.jpg"
       title="Contact Us"
@@ -31,11 +31,12 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
 import HeroSection from '@/components/HeroSection.vue';
 import ContactForm from '@/components/ContactForm.vue';
+import mixins from 'vue-typed-mixins';
+import PageTransitionMixin from '@/mixins/PageTransitionMixin';
 
-export default Vue.extend({
+export default mixins(PageTransitionMixin).extend({
   components: {
     HeroSection,
     ContactForm,

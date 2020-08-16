@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col justify-center items-center">
+  <div class="flex flex-col justify-center items-center page-transition">
     <hero-section
       img-src="images/loui-kiaer-CielzQJR0SQ-unsplash.jpg"
       title="Services"
@@ -15,14 +15,47 @@
         </p>
       </div>
       <div class="my-12">
-        <template v-for="(step, i) in steps">
-          <timeline-component
-            :key="i"
-            :text="step.text"
-            :step-num="i + 1"
-            :circle-classes="step.circleClasses"
-          />
-        </template>
+        <timeline-component :circle-classes="['bg-peach-400', 'text-white']">
+          <template v-slot:indicator>1</template>
+          <template v-slot:content>
+            <span class="font-semibold text-lg text-navy-500"> Think of your company name! </span>
+            <span class="block text-sm text-gray-800 mt-4">
+              Probably something that you are not going to regret in a week's time.
+            </span>
+          </template>
+        </timeline-component>
+        <timeline-component :circle-classes="['bg-peach-500', 'text-white']">
+          <template v-slot:indicator>2</template>
+          <template v-slot:content>
+            <span class="font-semibold text-lg text-navy-500">Contact Us</span>
+            <span class="block text-sm text-gray-800 mt-4"
+              >Call our office hotline or head over to the
+              <nuxt-link to="/contactus" class="underline">contact page</nuxt-link>
+              to make an appointment!
+            </span>
+          </template>
+        </timeline-component>
+        <timeline-component :circle-classes="['bg-peach-600', 'text-white']">
+          <template v-slot:indicator>3</template>
+          <template v-slot:content>
+            <span class="font-semibold text-lg text-navy-500">Prepare Information</span>
+            <span class="block text-sm text-gray-800 mt-4"
+              >Don't worry! We will guide you on what information is necessary to complete the
+              process.
+            </span>
+          </template>
+        </timeline-component>
+        <timeline-component :circle-classes="['bg-peach-700', 'text-white']">
+          <template v-slot:indicator>4</template>
+          <template v-slot:content>
+            <span class="font-semibold text-lg text-navy-500">
+              Setup a Bank account for your business
+            </span>
+            <span class="block text-sm text-gray-800 mt-4">
+              Choose a bank of your choice and you're ready to go.
+            </span>
+          </template>
+        </timeline-component>
       </div>
       <div>
         <h2 class="font-bold text-navy-500 text-xl text-center lg:text-2xl xl:text-3xl">
@@ -68,12 +101,13 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
 import HeroSection from '@/components/HeroSection.vue';
 import BannerSection from '@/components/BannerSection.vue';
 import TimelineComponent from '@/components/TimelineComponent.vue';
+import mixins from 'vue-typed-mixins';
+import PageTransitionMixin from '~/mixins/PageTransitionMixin';
 
-export default Vue.extend({
+export default mixins(PageTransitionMixin).extend({
   components: {
     HeroSection,
     BannerSection,
@@ -81,28 +115,6 @@ export default Vue.extend({
   },
   data() {
     return {
-      steps: [
-        {
-          text:
-            '<span class="font-semibold text-lg text-navy-500" > Think of your company name! </span> <span class="block text-sm text-gray-800 mt-4"> Probably something that you are not going to regret in a week\'s time. </span>',
-          circleClasses: ['bg-peach-400', 'text-white'],
-        },
-        {
-          text:
-            '<span class="font-semibold text-lg text-navy-500" >Contact Us</span> <span class="block text-sm text-gray-800 mt-4">Call our office hotline or head over to the <a href="/contactus" class="underline" >contact page</a> to make an appointment! </span>',
-          circleClasses: ['bg-peach-500', 'text-white'],
-        },
-        {
-          text:
-            '<span class="font-semibold text-lg text-navy-500" >Prepare Information</span> <span class="block text-sm text-gray-800 mt-4">Don\'t worry! We will guide you on what information is necessary to complete the process. </span>',
-          circleClasses: ['bg-peach-600', 'text-white'],
-        },
-        {
-          text:
-            '<span class="font-semibold text-lg text-navy-500" >Setup a Bank account for your business</span> <span class="block text-sm text-gray-800 mt-4">Choose a bank of your choice and you\'re ready to go.</span>',
-          circleClasses: ['bg-peach-700', 'text-white'],
-        },
-      ],
       benefits: [
         { imgSrc: 'svg/price.svg', text: 'No Miscellaneous Fee' },
         { imgSrc: 'svg/document.svg', text: 'Incorporation Documents' },

@@ -4,15 +4,11 @@
       class="rounded-full h-16 w-16 flex items-center justify-center flex-shrink-0 circle font-bold text-lg"
       :class="circleClasses"
     >
-      {{ stepNum }}
+      <slot name="indicator"> </slot>
     </div>
-    <!-- eslint-disable vue/no-v-html -->
-    <div
-      class="speech-bubble ml-4 px-4 py-4 w-full"
-      :class="speechBubbleClasses"
-      v-html="text"
-    ></div>
-    <!-- eslint-enable -->
+    <div class="speech-bubble ml-4 px-4 py-4 w-full" :class="speechBubbleClasses">
+      <slot name="content"></slot>
+    </div>
   </div>
 </template>
 
@@ -21,14 +17,6 @@ import Vue from 'vue';
 
 export default Vue.extend({
   props: {
-    stepNum: {
-      type: Number,
-      default: 1,
-    },
-    text: {
-      type: String,
-      default: 'Hello World',
-    },
     circleClasses: {
       type: Array as () => Array<String>,
       default: () => ['bg-gray-300'],

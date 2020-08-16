@@ -1,6 +1,6 @@
 <template>
   <div
-    class="rounded-lg overflow-hidden card-container cursor-pointer"
+    class="rounded-lg overflow-hidden card-container cursor-pointer shadow-md"
     @click="showDescription = !showDescription"
   >
     <div
