@@ -69,7 +69,7 @@ export default Vue.extend({
         {
           imgSrc: 'faces/NTI3NzIuanBn.jpg',
           name: 'Kye',
-          position: 'Cheif Operations Officer',
+          position: 'Chief Operations Officer',
         },
         {
           imgSrc: 'faces/NTUzMzguanBn.jpg',
