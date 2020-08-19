@@ -4,7 +4,11 @@
       <h1 class="font-bold text-navy-500 text-3xl mb-4 xl:text-4xl">Testimonials</h1>
       <div class="flex flex-col lg:flex-row lg:justify-around">
         <template v-for="(testimonialCard, i) in testimonialCards">
-          <testimonial-card :key="i" :testimonial-card-data="testimonialCard" class="my-6" />
+          <testimonial-card
+            :key="i"
+            :testimonial-card-data="testimonialCard"
+            class="my-6 fade-in fade-transition"
+          />
         </template>
       </div>
     </div>
@@ -12,10 +16,11 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
 import TestimonialCard from '@/components/TestimonialCard.vue';
+import mixins from 'vue-typed-mixins';
+import FadeInMixin from '@/mixins/FadeInMixin';
 
-export default Vue.extend({
+export default mixins(FadeInMixin).extend({
   components: {
     TestimonialCard,
   },
@@ -55,4 +60,12 @@ export default Vue.extend({
 });
 </script>
 
-<style scoped></style>
+<style scoped>
+.fade-in {
+  opacity: 0;
+  transform: translateY(50px);
+}
+.fade-transition {
+  transition: all 0.3s ease-out;
+}
+</style>

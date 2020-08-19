@@ -12,7 +12,7 @@
       </div>
 
       <div
-        class="flex justify-center items-center lg:bg-white lg:px-12 lg:py-12 lg:rounded-lg lg:shadow-xl"
+        class="flex justify-center items-center lg:bg-white lg:px-12 lg:py-12 lg:rounded-lg lg:shadow-xl fade-in fade-transition"
       >
         <div id="contactsection">
           <div class="text-left lg:hidden">
@@ -31,10 +31,11 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
 import ContactForm from '@/components/ContactForm.vue';
+import mixins from 'vue-typed-mixins';
+import FadeInMixin from '@/mixins/FadeInMixin';
 
-export default Vue.extend({
+export default mixins(FadeInMixin).extend({
   components: {
     ContactForm,
   },
@@ -43,6 +44,15 @@ export default Vue.extend({
   },
 });
 </script>
+.<style scoped>
+.fade-in {
+  opacity: 0;
+  transform: translateY(50px);
+}
+.fade-transition {
+  transition: all 0.3s ease-out;
+}
+</style>
 
 <style scoped>
 .textWidth {

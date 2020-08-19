@@ -1,6 +1,6 @@
 <template>
   <div class="w-screen flex justify-center items-center">
-    <div class="content-area flex justify-center items-center flex-col">
+    <div class="content-area flex justify-center items-center flex-col fade-in fade-transition">
       <h1 class="text-2xl lg:text-3xl xl:text-4xl font-bold text-center">
         {{ titleText }}
       </h1>
@@ -14,9 +14,10 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
+import mixins from 'vue-typed-mixins';
+import FadeInMixin from '@/mixins/FadeInMixin';
 
-export default Vue.extend({
+export default mixins(FadeInMixin).extend({
   props: {
     titleText: {
       type: String,
@@ -40,5 +41,12 @@ export default Vue.extend({
 }
 .banner-btn:hover {
   @apply bg-peach-600 text-white;
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(50px);
+}
+.fade-transition {
+  transition: all 0.3s ease-out;
 }
 </style>

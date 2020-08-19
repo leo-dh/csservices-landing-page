@@ -63,7 +63,7 @@
         </h2>
         <div class="grid-container mt-6 gap-8 md:mt-10 lg:mt-12">
           <template v-for="(benefit, i) in benefits">
-            <div :key="i" class="flex items-center px-4">
+            <div :key="i" class="flex items-center px-4 fade-in fade-transition">
               <img :src="benefit.imgSrc" alt="" class="w-10 h-10" />
               <p class="ml-8 text-navy-500 flex-grow text-center md:flex-grow-0 md:text-left">
                 {{ benefit.text }}
@@ -78,7 +78,7 @@
         </h2>
         <div class="grid-container mt-6 gap-8 md:mt-10 lg:mt-12">
           <template v-for="(addon, i) in addons">
-            <div :key="i" class="flex items-center px-4">
+            <div :key="i" class="flex items-center px-4 fade-in fade-transition">
               <img :src="addon.imgSrc" alt="" class="w-10 h-10" />
               <p class="ml-8 text-navy-500 flex-grow text-center md:flex-grow-0 md:text-left">
                 {{ addon.text }}
@@ -105,9 +105,10 @@ import HeroSection from '@/components/HeroSection.vue';
 import BannerSection from '@/components/BannerSection.vue';
 import TimelineComponent from '@/components/TimelineComponent.vue';
 import mixins from 'vue-typed-mixins';
-import PageTransitionMixin from '~/mixins/PageTransitionMixin';
+import PageTransitionMixin from '@/mixins/PageTransitionMixin';
+import FadeInMixin from '~/mixins/FadeInMixin';
 
-export default mixins(PageTransitionMixin).extend({
+export default mixins(PageTransitionMixin, FadeInMixin).extend({
   components: {
     HeroSection,
     BannerSection,
@@ -138,5 +139,12 @@ export default mixins(PageTransitionMixin).extend({
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(50px);
+}
+.fade-transition {
+  transition: all 0.3s ease-out;
 }
 </style>

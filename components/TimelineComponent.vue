@@ -6,16 +6,20 @@
     >
       <slot name="indicator"> </slot>
     </div>
-    <div class="speech-bubble ml-4 px-4 py-4 w-full" :class="speechBubbleClasses">
+    <div
+      class="speech-bubble ml-4 px-4 py-4 w-full fade-in fade-transition"
+      :class="speechBubbleClasses"
+    >
       <slot name="content"></slot>
     </div>
   </div>
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
+import mixins from 'vue-typed-mixins';
+import FadeInMixin from '@/mixins/FadeInMixin';
 
-export default Vue.extend({
+export default mixins(FadeInMixin).extend({
   props: {
     circleClasses: {
       type: Array as () => Array<String>,
@@ -47,7 +51,7 @@ export default Vue.extend({
   border-right-color: inherit;
   border-left: 0;
   margin-top: -0.625em;
-  margin-left: -0.625em;
+  margin-left: -0.6em;
 }
 
 .circle {
@@ -65,5 +69,12 @@ export default Vue.extend({
   top: 0px;
   @apply bg-gray-400;
   z-index: -1;
+}
+.fade-in {
+  opacity: 0;
+  transform: translateX(-50px);
+}
+.fade-transition {
+  transition: all 0.3s ease-out;
 }
 </style>
