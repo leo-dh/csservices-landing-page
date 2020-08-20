@@ -1,12 +1,9 @@
 # CSServices Landing Page Mockup
 
-> **_NOTE:_** Currently integrating NuxtJS for the site
+> Made with **NuxtJS** and **TailwindCSS**
 
 This is a landing page mockup for a company providing corporate secretarial services.
 This static webpage is designed to be responsive and mobile-friendly.
-
-This is done purely in HTML and CSS.
-Javascript is _currently_ not used in this project.
 
 ## Disclaimer
 
@@ -18,4 +15,4 @@ The company is purely fictitious and not based on any existing companies. Any re
 - Logos are generated with https://www.freelogodesign.org/
 - Faces are obtained from https://generated.photos/
 - Icons are obtained from https://www.flaticon.com
-  - Icons made by Freepik from https://www.freepik.com
+- Icons made by Freepik from https://www.freepik.com
