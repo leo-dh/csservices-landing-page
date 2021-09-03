@@ -1,5 +1,5 @@
 <template>
-  <div class="w-screen bg-blue-100 flex justify-center items-center">
+  <div class="w-full bg-blue-100 flex justify-center items-center">
     <div class="content-area flex flex-row items-center lg:-my-20 xl:-my-32">
       <div class="hidden lg:block w-3/4 lg:px-10 xl:px-16">
         <h2 class="text-2xl font-bold text-navy-500 lg:text-3xl xl:text-4xl">
@@ -44,7 +44,8 @@ export default mixins(FadeInMixin).extend({
   },
 });
 </script>
-.<style scoped>
+
+<style scoped>
 .fade-in {
   opacity: 0;
   transform: translateY(50px);

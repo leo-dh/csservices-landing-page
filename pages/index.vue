@@ -32,6 +32,6 @@ export default mixins(PageTransitionMixin).extend({
 
 <style>
 .wrapper {
-  @apply flex flex-col justify-center items-center text-center w-screen;
+  @apply flex flex-col justify-center items-center text-center w-full;
 }
 </style>

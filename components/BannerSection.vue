@@ -1,5 +1,5 @@
 <template>
-  <div class="w-screen flex justify-center items-center">
+  <div class="w-full flex justify-center items-center">
     <div class="content-area flex justify-center items-center flex-col fade-in fade-transition">
       <h1 class="text-2xl lg:text-3xl xl:text-4xl font-bold text-center">
         {{ titleText }}

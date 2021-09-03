@@ -1,6 +1,6 @@
 <template>
   <div
-    class="min-h-screen w-screen bg-cover bg-center herobg flex justify-center items-center h-auto"
+    class="min-h-screen w-full bg-cover bg-center herobg flex justify-center items-center h-auto"
   >
     <div class="flex justify-center items-start flex-col content-area">
       <h2
@@ -22,9 +22,7 @@
         <button
           class="rounded bg-transparent text-gray-100 p-2 mt-2 border-gray-400 border-2 btn-min-width secondary-btn"
         >
-          <nuxt-link to="/services">
-            Learn More
-          </nuxt-link>
+          <nuxt-link to="/services"> Learn More </nuxt-link>
           <svg class="h-4 w-4 fill-current inline-block ml-2" viewBox="0 0 20 20">
             <path
               fill-rule="evenodd"
