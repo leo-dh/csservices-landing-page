@@ -15,7 +15,7 @@ export default {
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
   router: {
-    base: '/CSServices-LandingPage/',
+    base: `/${process.env.BASE_URL}/`,
   },
   css: [],
   plugins: [],
